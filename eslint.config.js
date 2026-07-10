@@ -3,6 +3,9 @@ import vueTsConfig from '@vue/eslint-config-typescript'
 import skipFormatting from '@vue/eslint-config-prettier/skip-formatting'
 
 export default [
+  {
+    ignores: ['dist/**'],
+  },
   ...pluginVue.configs['flat/essential'],
   ...vueTsConfig(),
   skipFormatting,
